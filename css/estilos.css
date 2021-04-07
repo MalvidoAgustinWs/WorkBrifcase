@@ -229,6 +229,10 @@ main {
 	justify-content: center;
 	font-size: 1.3em;
 }
+.alert{
+	color: red;
+	font-size: 1.5em;
+}
 
 .container {
 	width: 90%;
