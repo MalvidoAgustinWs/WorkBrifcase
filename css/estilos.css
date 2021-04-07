@@ -18,7 +18,7 @@ body{
 }
 body.inicio{
 	background-image: url('./../img/kevin-bhagat-zNRITe8NPqY-unsplash.jpg');
-	background-size: 100% 1000px;
+	background-size: 100% 100%;
 	background-repeat: repeat;
 }
 body.home{
@@ -129,7 +129,7 @@ main {
 }
 
 .header .title {
-	width: 40%;
+	width: 43%;
 	height: auto;
 	padding: 0px 20px 0px 20px;
 	font-size: 1.5em;
@@ -160,25 +160,23 @@ main {
 	border-radius: 0px 0px 10px 10px;
 }
 
-@media screen and (max-width: 1350px) {
-	.header {
-		display: unset;
-	}
+@media screen and (max-width: 1024px) {
+
 	.header .title {
-		width: 100%;
+		width: 44%;
 		height: 20%;
-		font-size: 3em;
-		padding: 0px;
+		font-size: 1.005em;
+		padding: 10px 0px 11px 0px;
+		align-content: center;
 	}
-	h1 {
-		background-color: var(--logotipo-fuse);
-		padding-left: 20%;
-	}
+
 	.header .option {
 		width: 33.3%;
-		font-size: 1.8em;
+		font-size: 1.5em;
 		letter-spacing: 3px;
 		float: left;
+		padding: 20px 0px 16px 0px;
+		color: var(--logotipo);
 	}
 	.header .option:hover {
 		transition: 0.6s ease all;
@@ -189,10 +187,11 @@ main {
 		border-radius: 0px 0px 10px 10px;
 	}
 }
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 768px) {
 	.header .title {
+		width: 50%;
 		font-size: 1em;
-		font-weight: 800;
+		padding: 0px 0px 0px 0px;
 		justify-content: center;
 		letter-spacing: 1px;
 		text-shadow: none;
@@ -202,6 +201,15 @@ main {
 		letter-spacing: 1px;
 	}
 }
+@media screen and (max-width: 425px) {
+	.header .title{
+		width: 50%;
+		font-size: 0.5em;
+		padding: 7px 0px 7px 0px;
+	}
+	
+}
+
 /* ---------------------------HOME CONTENEDOR----------------------------------------------- */
 .txt {
 	width: 99%;
@@ -247,7 +255,7 @@ main {
 	letter-spacing: 3px;
 }
 .ligth {
-	color: rgb(114, 113, 113);
+	color: rgb(218, 216, 216);
 }
 .ContInfo {
 	width: 68%;
@@ -262,7 +270,7 @@ main {
 
 @media screen and (max-width: 1024px) {
 	.img{
-		height: 250px;
+		height: 240px;
 		margin-top: -30px;
 	}
 	.ContTitle{
