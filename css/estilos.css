@@ -221,11 +221,12 @@ main {
 
 /* ---------------------------HOME CONTENEDOR----------------------------------------------- */
 .txt {
-	width: 99%;
+	width: 100%;
 	height: auto;
 	margin: 5px;
-	padding: 0px 0px 0px 10%;
+	padding: 5px 3px 5px 3px;
 	box-sizing: border-box;
+	justify-content: center;
 	font-size: 1.3em;
 }
 
