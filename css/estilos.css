@@ -1,0 +1,288 @@
+:root {
+	--logotipo: #1a1a1a;
+	--profesion: #f2f2f2;
+	--primario: #263f85e8;
+	--logotipo-fuse: #1a1a1a73;
+	--container: rgb(183, 183, 185);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Bebas Neue', cursive;
+	
+}
+body.inicio{
+	background-image: url('./../img/kevin-bhagat-zNRITe8NPqY-unsplash.jpg');
+	background-size: 100% 1000px;
+	background-repeat: repeat;
+}
+body.home{
+	background-image: url('./../img/lukas-blazek-GnvurwJsKaY-unsplash.jpg');
+	background-size: 100% 1000px;
+	background-repeat: repeat;
+}
+a {
+	text-decoration: none;
+	color: var(--logotipo);
+}
+a:hover {
+	color: var(--primario);
+}
+
+main {
+	width: 90%;
+	margin: auto;
+	max-width: 800px;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+/* ---------------------------------PAGINA INICIO------------------------------------------ */
+
+.logotipo {
+	padding: 10px;
+	border: 8px double var(--logotipo);
+	border-radius: 10px;
+	color: var(--logotipo);
+}
+
+.logotipo .subtitulo {
+	text-align: center;
+	color: var(--profesion);
+	background: var(--logotipo);
+	padding: 12px 20px;
+	transition: 0.5s ease all;
+	font-size: 36px;
+	font-family: 'Train One', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.logotipo:hover .subtitulo {
+	background: var(--primario);
+}
+
+.texto-animado {
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+}
+
+.texto-animado > div {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	transition: 0.3s ease all;
+}
+
+.texto-animado > div.animacion {
+	transform: translateY(-100px);
+}
+
+.texto-animado > div span {
+	font-size: 100px;
+	font-weight: normal;
+	line-height: 100px;
+}
+
+.texto-animado .segunda-linea {
+	position: absolute;
+	top: 100px;
+}
+
+@media screen and (max-width: 600px) {
+	.texto-animado > div span {
+		font-size: 50px;
+		line-height: 50px;
+	}
+
+	.texto-animado .segunda-linea {
+		top: 50px;
+	}
+
+	.texto-animado > div.animacion {
+		transform: translateY(-50px);
+	}
+
+	.logotipo .subtitulo {
+		font-size: 20px;
+	}
+}
+/* -------------------------------HOME HEADER-------------------------------------- */
+.header {
+	width: 100%;
+	height: 20%;
+	background-color: var(--logotipo-fuse);
+	color: var(--primario);
+	font-family: 'Train One', Arial, Helvetica, sans-serif;
+	display: flex;
+	position: relative;
+	box-sizing: border-box;
+}
+
+.header .title {
+	width: 40%;
+	height: auto;
+	padding: 0px 20px 0px 20px;
+	font-size: 1.5em;
+	letter-spacing: 6px;
+	text-shadow: 0px 8px 6px rgba(38, 11, 56, 0.5);
+	background-color: var(--logotipo-fuse);
+}
+.header .option {
+	width: 25%;
+	height: 100%;
+	padding: 1.5% 0px 1.43% 0px;
+	justify-content: center;
+	font-family: 'Bebas Neue', Arial;
+	font-size: 1.43em;
+	background-color: var(--logotipo-fuse);
+	color: var(--primario);
+	display: flex;
+	flex-direction: row;
+	box-sizing: border-box;
+}
+
+.header .option:hover {
+	transition: 0.6s ease all;
+	font-size: 1.8em;
+	font-weight: 500;
+	color: var(--profesion);
+	background-color: var(--logotipo);
+	border-radius: 0px 0px 10px 10px;
+}
+
+@media screen and (max-width: 1350px) {
+	.header {
+		display: unset;
+	}
+	.header .title {
+		width: 100%;
+		height: 20%;
+		font-size: 3em;
+		padding: 0px;
+	}
+	h1 {
+		background-color: var(--logotipo-fuse);
+		padding-left: 20%;
+	}
+	.header .option {
+		width: 33.3%;
+		font-size: 1.8em;
+		letter-spacing: 3px;
+		float: left;
+	}
+	.header .option:hover {
+		transition: 0.6s ease all;
+		font-size: 1.8em;
+		font-weight: 500;
+		color: var(--profesion);
+		background-color: var(--logotipo);
+		border-radius: 0px 0px 10px 10px;
+	}
+}
+@media screen and (max-width: 980px) {
+	.header .title {
+		font-size: 1em;
+		font-weight: 800;
+		justify-content: center;
+		letter-spacing: 1px;
+		text-shadow: none;
+	}
+	.header .option {
+		font-size: 1.2em;
+		letter-spacing: 1px;
+	}
+}
+/* ---------------------------HOME CONTENEDOR----------------------------------------------- */
+.txt {
+	width: 99%;
+	height: auto;
+	margin: 5px;
+	padding: 0px 0px 0px 10%;
+	box-sizing: border-box;
+	font-size: 1.3em;
+}
+
+.container {
+	width: 90%;
+	min-height: 270px;
+	margin: 10px 5% 10px 5%;
+	padding: 5px;
+	background-color: var(--container);
+	border-radius: 15px;
+	border: 2px solid var(--logotipo);
+	box-sizing: border-box;
+}
+.img {
+	float: right;
+	width: 30%;
+	height: 250px;
+	margin: -50px 0px 0px 0px;
+	box-sizing: border-box;
+	border: 3px solid var(--logotipo-fuse);
+	border-radius: 5px;
+	z-index: 10;
+}
+
+.ContTitle {
+	width: 65%;
+	height: 2%;
+	margin: 0px 0px 0px 10px;
+	padding: auto;
+	align-content: center;
+	font-size: 2.5em;
+	box-sizing: border-box;
+}
+.link {
+	text-decoration: underline;
+	letter-spacing: 3px;
+}
+.ligth {
+	color: rgb(114, 113, 113);
+}
+.ContInfo {
+	width: 68%;
+	height: 180px;
+	margin: 10px 0px 5px 5px;
+	padding: 5px;
+	font-family: Arial, Helvetica, sans-serif;
+	border: 2px solid var(--logotipo-fuse);
+	border-radius: 5px;
+	box-sizing: border-box;
+}
+
+@media screen and (max-width: 1024px) {
+	.img{
+		height: 250px;
+		margin-top: -30px;
+	}
+	.ContTitle{
+		width: 100%;
+		font-size: 2em;
+	}
+	.ContInfo{
+		height: 100%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	
+	.img{
+		float: none;
+		width: 100%;
+		height: 50%;
+		margin-top: 10px;
+	}
+	.ContInfo{
+		width: 99%;
+	}
+}
