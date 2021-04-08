@@ -48,3 +48,9 @@ class TextoAnimado {
 
 new TextoAnimado('logo', 'logotipo');
 
+
+const btnPpal = document.getElementById('btnPpal')
+
+btnPpal.addEventListener('click', (e)=>{
+	console.log(e)
+})
