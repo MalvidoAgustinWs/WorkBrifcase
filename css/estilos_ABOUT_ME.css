@@ -3,7 +3,7 @@
 	--profesion: #f2f2f2;
 	--primario: #263f85e8;
 	--logotipo-fuse: #1a1a1a73;
-	--container: rgb(183, 183, 185);
+	--container: rgb(214, 214, 218);
 }
 
 * {
@@ -167,6 +167,7 @@ main {
 	justify-content: center;
 	font-size: 2.5em;
 	letter-spacing: 2px;
+	cursor: pointer;
 }
 .boxSec_1{
     width: 87%;
@@ -181,6 +182,7 @@ main {
 	z-index: -10;
     box-sizing: border-box;
 	font-size: 1.5em;
+	font-family: 'New Tegomin';
 }
 .boxSec_2{
     width: 87%;
@@ -194,6 +196,8 @@ main {
     visibility: unset;
 	z-index: -10;
     box-sizing: border-box;
+	font-size: 1.5em;
+	font-family: 'New Tegomin',sans-serif;
 }
 .boxSec_3{
     width: 87%;
@@ -207,6 +211,8 @@ main {
     visibility: unset;
 	z-index: -10;
     box-sizing: border-box;
+	font-size: 1.5em;
+	font-family: 'New Tegomin';
 }
 .boxSec_4{
     width: 87%;
@@ -220,6 +226,8 @@ main {
     visibility: unset;
 	z-index: -10;
     box-sizing: border-box;
+	font-size: 1.5em;
+	font-family: 'New Tegomin';
 }
 .visible{
 	transition: heigth 2.6s;
@@ -227,10 +235,12 @@ main {
 	visibility: visible;
 }
 .contImg{
-	align-content: center;
+	max-width: 1000px;
+	margin: 20px auto;
+	overflow: hidden;
 }
-.row{
-	width: 310%;
+.slide{
+	width: 100%;
 	height: 300px;
 	margin: 5px 10px 5px 0.05%;
 	padding: 0px;
@@ -259,7 +269,7 @@ main {
 	font-size: 2.5em;
 	line-height: 70px;
 	border-radius: 50%;
-	position: absolute;
+	position: fixed;
 	transition: 1.2s ease all;
 }
 .boton:hover{
