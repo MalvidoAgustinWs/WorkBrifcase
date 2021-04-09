@@ -120,19 +120,19 @@ main {
 @media screen and (max-width: 768px) {
 	.header .title {
 		width: 50%;
-		font-size: 1em;
-		padding: 0px 0px 0px 0px;
+		font-size: 1.2em;
+		padding: 3px 0px 5px 0px;
 		justify-content: center;
 		letter-spacing: 1px;
 		text-shadow: none;
 	}
 	.header .option {
-		font-size: 1em;
+		font-size: 1.2em;
 		letter-spacing: 1px;
-		padding: 25px 0px 17px 0px;
+		padding: 20px 0px 18px 0px;
 	}
 	.corrector{
-		font-size: 0.7em;
+		font-size: 0.8em;
 		padding: 5px 0px 0px 0px;
 	}
 }
@@ -180,6 +180,7 @@ main {
     visibility: unset;
 	z-index: -10;
     box-sizing: border-box;
+	font-size: 1.5em;
 }
 .boxSec_2{
     width: 87%;
@@ -224,4 +225,52 @@ main {
 	transition: heigth 2.6s;
 	height: auto;
 	visibility: visible;
+}
+.contImg{
+	align-content: center;
+}
+.row{
+	width: 310%;
+	height: 300px;
+	margin: 5px 10px 5px 0.05%;
+	padding: 0px;
+	align-content: center;
+	background-color: var(--logotipo-fuse);
+	box-sizing: border-box;
+	display: flex;
+	position: relative;
+	overflow: hidden;
+	border-radius: 10px;
+	border: 2px solid var(--logotipo-fuse);
+
+}
+.colImg{
+	width: 80%;
+	height: 300px;
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+}
+.boton{
+	width: 70px;
+	height: 70px;
+	font-size: 2.5em;
+	line-height: 70px;
+	border-radius: 50%;
+	position: absolute;
+	transition: 1.2s ease all;
+}
+.boton:hover{
+	cursor: pointer;
+	font-size: 2.8em;
+}
+.next{
+	right: 2%;
+	top: 50%;
+}
+.back{
+	left: 2%;
+	top: 50%;
 }
