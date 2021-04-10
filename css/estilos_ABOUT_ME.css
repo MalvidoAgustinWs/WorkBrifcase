@@ -12,12 +12,11 @@
 	box-sizing: border-box;
 }
 
-body{
+body {
 	font-family: 'Bebas Neue', cursive;
-	
 }
 
-body.AboutMe{
+body.AboutMe {
 	background-image: url('./../img/domenico-loia-hGV2TfOh0ns-unsplash.jpg');
 	background-size: 100% 1000px;
 	background-repeat: repeat;
@@ -41,7 +40,6 @@ main {
 	justify-content: center;
 }
 
-
 .header {
 	width: 100%;
 	height: 20%;
@@ -51,7 +49,7 @@ main {
 	display: flex;
 	position: relative;
 	box-sizing: border-box;
-    margin-bottom: 0px;
+	margin-bottom: 0px;
 }
 
 .header .title {
@@ -90,7 +88,6 @@ main {
 }
 
 @media screen and (max-width: 1024px) {
-
 	.header .title {
 		width: 44%;
 		height: 20%;
@@ -131,117 +128,126 @@ main {
 		letter-spacing: 1px;
 		padding: 20px 0px 18px 0px;
 	}
-	.corrector{
+	.corrector {
 		font-size: 0.8em;
 		padding: 5px 0px 0px 0px;
 	}
 }
 @media screen and (max-width: 425px) {
-	.header .title{
-		width: 50%;
-		font-size: 0.5em;
+	.header .title {
+		width: 100%;
+		height: auto;
+		font-size: 1em;
 		padding: 7px 0px 7px 0px;
+		position: absolute;
 	}
-	
+	.header .option{
+		margin-top: 60px;
+	}
 }
 /* -------------------------------------------------------------- */
 
-.main{
-    width: 100%;
-    height: 100%;
-    margin: 50px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
-    box-sizing: border-box;
-}   
-.btnPpal{
-    width: 90%;
-    height: 60px;
-    margin: 0.2% 5% -1% 5%;
-    padding: 0px 20px 0px 50px;
-    background-color: var(--container);
-    border: 2px solid var(--logotipo);
-    border-radius: 5px 5px 20px 20px;
+.main {
+	width: 100%;
+	height: 100%;
+	margin: 50px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	box-sizing: border-box;
+}
+.btnPpal {
+	width: 90%;
+	height: 65px;
+	margin: 0.2% 5% 0.5% 5%;
+	padding: 5px 20px 0px 50px;
+	background-color: var(--container);
+	border: 2px solid var(--logotipo);
+	border-radius: 5px 5px 20px 20px;
 	z-index: 10;
 	position: relative;
-    box-sizing: border-box;
+	box-sizing: border-box;
 	justify-content: center;
 	font-size: 2.5em;
 	letter-spacing: 2px;
 	cursor: pointer;
 }
-.boxSec_1{
-    width: 87%;
-    height: 0px;
+.boxSec_1 {
+	width: 87%;
+	height: 0px;
 	overflow: hidden;
-    margin: -10px 5% 0.5% 6.5%;
-    padding: 10px 10px 0px 10px;
-    background-color: var(--profesion);
-    border-radius: 0px 0px 10px 10px;
-    border: 2px solid var(--logotipo);
-    visibility: unset;
+	margin: -10px 5% 0.5% 6.5%;
+	padding: 10px 10px 0px 10px;
+	background-color: var(--profesion);
+	border-radius: 0px 0px 10px 10px;
+	border: 2px solid var(--logotipo);
+	visibility: unset;
 	z-index: -10;
-    box-sizing: border-box;
+	box-sizing: border-box;
 	font-size: 1.5em;
 	font-family: 'New Tegomin';
 }
-.boxSec_2{
-    width: 87%;
-    height: 0px;
+.boxSec_2 {
+	width: 87%;
+	height: 0px;
 	overflow: hidden;
-    margin: -10px 5% 0.5% 6.5%;
-    padding: 10px 10px 0px 10px;
-    background-color: var(--profesion);
-    border-radius: 0px 0px 10px 10px;
-    border: 2px solid var(--logotipo);
-    visibility: unset;
+	margin: -10px 5% 0.5% 6.5%;
+	padding: 10px 10px 0px 10px;
+	background-color: var(--profesion);
+	border-radius: 0px 0px 10px 10px;
+	border: 2px solid var(--logotipo);
+	visibility: unset;
 	z-index: -10;
-    box-sizing: border-box;
+	box-sizing: border-box;
 	font-size: 1.5em;
-	font-family: 'New Tegomin',sans-serif;
+	font-family: 'New Tegomin', sans-serif;
 }
-.boxSec_3{
-    width: 87%;
-    height: 0px;
+.boxSec_3 {
+	width: 87%;
+	height: 0px;
 	overflow: hidden;
-    margin: -10px 5% 0.5% 6.5%;
-    padding: 10px 10px 0px 10px;
-    background-color: var(--profesion);
-    border-radius: 0px 0px 10px 10px;
-    border: 2px solid var(--logotipo);
-    visibility: unset;
+	margin: -10px 5% 0.5% 6.5%;
+	padding: 10px 10px 0px 10px;
+	background-color: var(--profesion);
+	border-radius: 0px 0px 10px 10px;
+	border: 2px solid var(--logotipo);
+	visibility: unset;
 	z-index: -10;
-    box-sizing: border-box;
-	font-size: 1.5em;
-	font-family: 'New Tegomin';
-}
-.boxSec_4{
-    width: 87%;
-    height: 0px;
-	overflow: hidden;
-    margin: -10px 5% 0.5% 6.5%;
-    padding: 10px 10px 0px 10px;
-    background-color: var(--profesion);
-    border-radius: 0px 0px 10px 10px;
-    border: 2px solid var(--logotipo);
-    visibility: unset;
-	z-index: -10;
-    box-sizing: border-box;
+	box-sizing: border-box;
 	font-size: 1.5em;
 	font-family: 'New Tegomin';
 }
-.visible{
+.boxSec_4 {
+	width: 87%;
+	height: 0px;
+	overflow: hidden;
+	margin: -10px 5% 0.5% 6.5%;
+	padding: 10px 10px 0px 10px;
+	background-color: var(--profesion);
+	border-radius: 0px 0px 10px 10px;
+	border: 2px solid var(--logotipo);
+	visibility: unset;
+	z-index: -10;
+	box-sizing: border-box;
+	font-size: 1.5em;
+	font-family: 'New Tegomin';
+}
+.visible {
 	transition: heigth 2.6s;
 	height: auto;
 	visibility: visible;
 }
-.contImg{
+.contImg {
 	max-width: 1000px;
 	margin: 20px auto;
+	position: relative;
 	overflow: hidden;
 }
-.slide{
-	width: 100%;
-	height: 300px;
+.contSlide {
+	display: flex;
+	flex-wrap: nowrap;
+}
+.slide {
+	min-width: 100%;
+	max-height: 400px;
 	margin: 5px 10px 5px 0.05%;
 	padding: 0px;
 	align-content: center;
@@ -252,9 +258,10 @@ main {
 	overflow: hidden;
 	border-radius: 10px;
 	border: 2px solid var(--logotipo-fuse);
-
+	transition: 0.3s ease all;
+	z-index: 10;
 }
-.colImg{
+.colImg {
 	width: 80%;
 	height: 300px;
 	margin: 0px;
@@ -263,24 +270,43 @@ main {
 	display: flex;
 	flex-direction: column;
 }
-.boton{
-	width: 70px;
-	height: 70px;
-	font-size: 2.5em;
-	line-height: 70px;
-	border-radius: 50%;
-	position: fixed;
-	transition: 1.2s ease all;
-}
-.boton:hover{
-	cursor: pointer;
+.boton {
 	font-size: 2.8em;
+	background: none;
+	border: none;
+	cursor: pointer;
+	height: 96%;
+	width: 50px;
+	text-align: center;
+	position: absolute;
+	transition: 0.3s ease all;
+	pointer-events: all;
+	margin: -120px -20px 0px -20px;
+	border-radius: 10px;
 }
-.next{
+.boton:hover {
+	cursor: pointer;
+	font-weight: 600;
+	background-color: var(--logotipo-fuse);
+}
+.boton:visited {
+	border: none;
+}
+.next {
 	right: 2%;
-	top: 50%;
+	top: 40%;
+	background: none;
 }
-.back{
+.back {
 	left: 2%;
-	top: 50%;
+	top: 40%;
+	background: none;
+}
+.controles {
+	position: absolute;
+	top: 0px;
+	z-index: 12;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
 }

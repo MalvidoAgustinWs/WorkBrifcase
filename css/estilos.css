@@ -130,9 +130,9 @@ main {
 
 .header .title {
 	width: 43%;
-	height: auto;
+	height: 100%;
 	padding: 0px 20px 0px 20px;
-	font-size: 1.3em;
+	font-size: 1.5em;
 	letter-spacing: 6px;
 	text-shadow: 0px 8px 6px rgba(38, 11, 56, 0.5);
 	background-color: var(--logotipo-fuse);
@@ -194,27 +194,32 @@ main {
 @media screen and (max-width: 768px) {
 	.header .title {
 		width: 50%;
+		height: auto;
 		font-size: 1em;
-		padding: 0px 0px 0px 0px;
+		padding: 8px 0px 10px 0px;
 		justify-content: center;
 		letter-spacing: 1px;
 		text-shadow: none;
 	}
 	.header .option {
-		font-size: 1em;
+		font-size: 1.2em;
 		letter-spacing: 1px;
-		padding: 25px 0px 17px 0px;
+		padding: 20px 0px 18px 0px;
 	}
-	.corrector{
-		font-size: 0.7em;
+	.corrector {
+		font-size: 0.8em;
 		padding: 5px 0px 0px 0px;
 	}
 }
 @media screen and (max-width: 425px) {
 	.header .title{
-		width: 50%;
-		font-size: 0.5em;
+		width: 100%;
+		font-size: 1.2em;
 		padding: 7px 0px 7px 0px;
+		position: absolute;
+	}
+	.header .option{
+		margin-top: 70px;
 	}
 	
 }
