@@ -43,3 +43,49 @@ btnPpal_1.addEventListener('click', () => {
 //         btnPpal_1.nextElementSibling.classList.remove('visible')
 //     }
 //  });
+// ----------------------SlideShow----------------------------------------
+const siguiente = () => {
+    if (contSlide.children.length > 0){
+        console.log('Siguiente')
+        const primerElemento = contSlide.children[0];
+        contSlide.style.transition = `1000ms ease-out all`;
+
+        const tamañoSlide = contSlide.children[0].offsetWidth + 10;
+        contSlide.style.transform = `translateX(-${tamañoSlide}px)`
+
+        const transicion = () => {
+        contSlide.style.transition = 'none';
+        contSlide.style.transform = `translateX(0)`;
+        contSlide.appendChild(primerElemento);
+        contSlide.removeEventListener('transitionend', transicion)
+        }
+        
+        contSlide.addEventListener('transitionend', transicion)
+    }
+}
+const anterior = () => {
+    if (contSlide.children.length > 0) {
+        const idex= contSlide.children.length - 1;
+        const ultimElemento = contSlide.children[idex];
+
+        contSlide.insertBefore(ultimElemento, contSlide.firstChild);
+        const tamañoSlide = contSlide.children[0].offsetWidth + 10;
+        contSlide.style.transition = 'none';
+        contSlide.style.transform = `translateX(-${tamañoSlide}px)`;
+
+        setTimeout(()=>{
+            contSlide.style.transform = `translateX(0)`;
+            contSlide.style.transition = '1000ms ease-out all';
+        },30)
+    }
+}
+
+const contSlide = document.getElementById('contSlide')
+const back = document.getElementById('back')
+const next = document.getElementById('next')
+
+back.addEventListener("click",anterior)
+next.addEventListener("click",siguiente)
+
+
+// ----------------------------------------------------------------
