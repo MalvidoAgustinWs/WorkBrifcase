@@ -175,7 +175,23 @@ main {
 	height: 0px;
 	overflow: hidden;
 	margin: -10px 5% 0.5% 6.5%;
-	padding: 10px 10px 0px 10px;
+	padding: 10px 10px 5px 10px;
+	background-color: var(--profesion);
+	border-radius: 0px 0px 10px 10px;
+	border: 2px solid var(--logotipo);
+	visibility: unset;
+	z-index: -10;
+	box-sizing: border-box;
+	font-size: 1.5em;
+	font-family: 'New Tegomin';
+	
+}
+.boxSec_2 {
+	width: 87%;
+	height: 0px;
+	overflow: hidden;
+	margin: -10px 5% 0.5% 6.5%;
+	padding: 10px 10px 5px 10px;
 	background-color: var(--profesion);
 	border-radius: 0px 0px 10px 10px;
 	border: 2px solid var(--logotipo);
@@ -185,27 +201,12 @@ main {
 	font-size: 1.5em;
 	font-family: 'New Tegomin';
 }
-.boxSec_2 {
-	width: 87%;
-	height: 0px;
-	overflow: hidden;
-	margin: -10px 5% 0.5% 6.5%;
-	padding: 10px 10px 0px 10px;
-	background-color: var(--profesion);
-	border-radius: 0px 0px 10px 10px;
-	border: 2px solid var(--logotipo);
-	visibility: unset;
-	z-index: -10;
-	box-sizing: border-box;
-	font-size: 1.5em;
-	font-family: 'New Tegomin', sans-serif;
-}
 .boxSec_3 {
 	width: 87%;
 	height: 0px;
 	overflow: hidden;
 	margin: -10px 5% 0.5% 6.5%;
-	padding: 10px 10px 0px 10px;
+	padding: 10px 10px 5px 10px;
 	background-color: var(--profesion);
 	border-radius: 0px 0px 10px 10px;
 	border: 2px solid var(--logotipo);
@@ -220,7 +221,7 @@ main {
 	height: 0px;
 	overflow: hidden;
 	margin: -10px 5% 0.5% 6.5%;
-	padding: 10px 10px 0px 10px;
+	padding: 10px 10px 5px 10px;
 	background-color: var(--profesion);
 	border-radius: 0px 0px 10px 10px;
 	border: 2px solid var(--logotipo);
@@ -231,9 +232,8 @@ main {
 	font-family: 'New Tegomin';
 }
 .visible {
-	transition: heigth 2.6s;
 	height: auto;
-	visibility: visible;
+	transition: height 1.6s;
 }
 .contImg {
 	max-width: 1000px;
@@ -310,3 +310,4 @@ main {
 	height: 100%;
 	pointer-events: none;
 }
+

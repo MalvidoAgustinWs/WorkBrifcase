@@ -1,0 +1,149 @@
+:root {
+	--logotipo: #1a1a1a;
+	--profesion: #f2f2f2;
+	--primario: #263f85e8;
+	--logotipo-fuse: #1a1a1a73;
+	--container: rgb(214, 214, 218);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Bebas Neue', cursive;
+}
+
+body.contact {
+	background-image: url('./../img/domenico-loia-hGV2TfOh0ns-unsplash.jpg');
+	background-size: 100%;
+	background-repeat: repeat;
+}
+a {
+	text-decoration: none;
+	color: var(--logotipo);
+}
+a:hover {
+	color: var(--primario);
+}
+
+main {
+	width: 90%;
+	margin: auto;
+	max-width: 800px;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+/* -----------------HEADER------------------------------------------------- */
+.header {
+	width: 100%;
+	height: 20%;
+	background-color: var(--logotipo-fuse);
+	color: var(--primario);
+	font-family: 'Train One', Arial, Helvetica, sans-serif;
+	display: flex;
+	position: relative;
+	box-sizing: border-box;
+}
+
+.header .title {
+	width: 43%;
+	height: 100%;
+	padding: 0px 20px 0px 20px;
+	font-size: 1.5em;
+	letter-spacing: 6px;
+	text-shadow: 0px 8px 6px rgba(38, 11, 56, 0.5);
+	background-color: var(--logotipo-fuse);
+}
+.header .option {
+	width: 25%;
+	height: 100%;
+	padding: 1.5% 0px 1.43% 0px;
+	justify-content: center;
+	font-family: 'Bebas Neue', Arial;
+	font-size: 1.43em;
+	background-color: var(--logotipo-fuse);
+	color: var(--primario);
+	display: flex;
+	flex-direction: row;
+	box-sizing: border-box;
+}
+
+.header .option:hover {
+	transition: 0.6s ease all;
+	font-size: 1.8em;
+	font-weight: 500;
+	color: var(--profesion);
+	background-color: var(--logotipo);
+	border-radius: 0px 0px 10px 10px;
+}
+.ligth {
+	color: rgb(218, 216, 216);
+}
+
+@media screen and (max-width: 1024px) {
+
+	.header .title {
+		width: 44%;
+		height: 20%;
+		font-size: 1.005em;
+		padding: 10px 0px 11px 0px;
+		align-content: center;
+	}
+
+	.header .option {
+		width: 33.3%;
+		font-size: 1.5em;
+		letter-spacing: 3px;
+		float: left;
+		padding: 20px 0px 16px 0px;
+		color: var(--logotipo);
+	}
+	.header .option:hover {
+		transition: 0.6s ease all;
+		font-size: 1.8em;
+		font-weight: 500;
+		color: var(--profesion);
+		background-color: var(--logotipo);
+		border-radius: 0px 0px 10px 10px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.header .title {
+		width: 50%;
+		height: auto;
+		font-size: 1em;
+		padding: 8px 0px 10px 0px;
+		justify-content: center;
+		letter-spacing: 1px;
+		text-shadow: none;
+	}
+	.header .option {
+		font-size: 1.2em;
+		letter-spacing: 1px;
+		padding: 20px 0px 18px 0px;
+	}
+	.corrector {
+		font-size: 0.8em;
+		padding: 5px 0px 0px 0px;
+	}
+}
+@media screen and (max-width: 425px) {
+	.header .title{
+		width: 100%;
+		font-size: 1.2em;
+		padding: 7px 0px 7px 0px;
+		position: absolute;
+	}
+	.header .option{
+		margin-top: 70px;
+	}
+	
+}
+/* ----------------------------------------------------------------------------- */
